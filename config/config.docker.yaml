@@ -19,8 +19,8 @@ db:
   type: 'postgres'
   port: 5432
   host: 'postgres'
-  username: 'demo'
-  password: 'demo'
+  username: 'blog'
+  password: '123'
   database: 'mailer'
 
 logging:
