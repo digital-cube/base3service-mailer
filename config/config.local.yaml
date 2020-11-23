@@ -3,7 +3,7 @@ description: 'base3 mailer application'
 prefix: '/api/mailer'
 app_version: '0.0.1'
 host: 'mailer'
-port: &port 80
+port: &port 9005
 
 apptype: 'micro-service'
 
@@ -19,9 +19,9 @@ db:
   type: 'postgres'
   port: 5432
   host: 'localhost'
-  username: 'demo'
-  password: 'demo'
-  database: 'mailer'
+  username: 'telmekom'
+  password: '123'
+  database: 'impresa_mailer'
 
 logging:
   version: 1

@@ -10,7 +10,7 @@ from tornado import gen
 import os
 
 if base.config.conf['apptype'] == 'monolith':
-    base.route.set('prefix', base.config.conf['services']['contacts']['prefix'])
+    base.route.set('prefix', base.config.conf['services']['mailer']['prefix'])
 else:
     base.route.set('prefix', base.config.conf['prefix'])
 
