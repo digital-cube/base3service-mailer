@@ -39,7 +39,8 @@ class MailerServiceHandler(base.Base):
         if '@' not in receiver:
             return False, "Invalid email address " + receiver
 
-        sendgrid_api_key = os.getenv('SENDGRID_KEY')
+        sendgrid_api_key = base.config.conf[
+            'sendgrid_api_key'] if 'sendgrid_api_key' in base.config.conf else os.getenv('SENDGRID_KEY')
 
         sg = sendgrid.SendGridAPIClient(sendgrid_api_key)
         mail = {

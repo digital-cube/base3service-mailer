@@ -15,6 +15,8 @@ store:
 authorization:
   key: 'Authorization'
 
+sendgrid_api_key: $SENDGRID_KEY
+
 db:
   type: 'postgres'
   port: 5432
